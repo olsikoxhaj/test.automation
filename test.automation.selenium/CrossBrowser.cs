@@ -15,6 +15,7 @@ namespace e_albania
         [TestMethod]
         public void TestMethod1()
         {
+            // change the driver from chrome to firefox
             IWebDriver chromeDriver = new ChromeDriver();
             chromeDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
 
