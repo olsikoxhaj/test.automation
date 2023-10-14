@@ -1,0 +1,36 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
+using NUnit.Framework;
+using NUnit.Framework.Internal;
+using OpenQA.Selenium.Firefox;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading;
+
+namespace e_albania
+{
+    [TestClass]
+    public class CrossTesting
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            IWebDriver chromeDriver = new ChromeDriver();
+            chromeDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
+
+            Thread.Sleep(3000);
+
+            chromeDriver.Quit();
+
+
+            IWebDriver firefoxDriver = new FirefoxDriver();
+            firefoxDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
+
+            Thread.Sleep(3000);
+
+            firefoxDriver.Quit();
+        }
+
+
+    }
+}
