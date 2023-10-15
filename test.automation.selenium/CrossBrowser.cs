@@ -20,10 +20,10 @@ namespace e_albania
             chromeDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
 
             Thread.Sleep(3000);
-            //add edge browser 
+            //add class // add driver
             chromeDriver.Quit();
 
-            //add a link and driver
+            
             IWebDriver firefoxDriver = new FirefoxDriver();
             firefoxDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
 
