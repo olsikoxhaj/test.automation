@@ -22,7 +22,7 @@ namespace Test_Cross1
                 IWebDriver driver = new ChromeDriver();
                 driver.Navigate().GoToUrl("https://e-albania.al/Default.aspx");
 
-            
+            // find and print one title on page
                 string pageTitle = driver.Title;
 
                 
