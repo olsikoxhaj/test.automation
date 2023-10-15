@@ -20,7 +20,7 @@ namespace e_albania
             chromeDriver.Navigate().GoToUrl("https://rahulshettyacademy.com/loginpagePractise/");
 
             Thread.Sleep(3000);
-
+            //add edge browser 
             chromeDriver.Quit();
 
 
